@@ -4,6 +4,10 @@ import { Send } from 'lucide-react';
 import 'font-awesome/css/font-awesome.min.css';
 import Navbar from './navbar.js'
 import { useNavigate } from 'react-router-dom';
+import iciciIcon from './icici.jpg';
+import hdfcIcon from './hdfc.jpg';
+import rblIcon from './rbl.jpg';
+import bobIcon from './bob.jpg';
 
 
 
@@ -205,9 +209,10 @@ const Home = ({ mail }) => {
           {
             type: 'Fixed Deposits',
             items: [
-              { name: 'SBI FD', code: 'SBIFD', return: 7.5, icon: '₹' },
-              { name: 'HDFC FD', code: 'HDFCFD', return: 7.2, icon: '₹' },
-              { name: 'ICICI FD', code: 'ICICFD', return: 7.8, icon: '₹' }
+              { name: 'ICICI Bank', code: 'ICICI FD', return: 7.5, icon: '₹', link : 'https://www.etmoney.com/fixed-deposit/icici-bank-fd-rates/5', image: iciciIcon },
+              { name: 'HDFC Bank', code: 'HDFC FD', return: 7.2, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/hdfc-bank-fd-rates/4', image: hdfcIcon },
+              { name: 'RBL Bank', code: 'RBL FD', return: 7.8, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/rbl-bank-fd-rates/16', image: rblIcon },
+              { name: 'Bank of Baroda', code: 'BOB FD', return: 7.9, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bank-of-baroda-fd-rates/6', image: bobIcon }
             ]
           },
           {
@@ -378,13 +383,17 @@ const Home = ({ mail }) => {
                         transform transition-all duration-300 
                         hover:scale-105 hover:shadow-lg
                         scroll-snap-align: start;`}
+                        onClick={() => window.open(investment.link, '_blank')}
                     >
-                      <div className="flex justify-between items-center mb-3">
+                      <div className="flex justify-between items-center">
                         <div>
-                          <h4 className="font-bold text-lg">{investment.name}</h4>
-                          <p className="text-sm text-gray-400">{investment.code}</p>
+                            <h4 className="font-bold text-lg">{investment.name}</h4>
+                            <div className="flex space-x-2">
+                              <p className="text-sm text-gray-400">{investment.code}</p>
+                              <p className="text-sm text-gray-400">( {investment.return}% )</p>
+                            </div>
                         </div>
-                        
+                        <img src={investment.image} alt="Investment Icon" className="w-12 rounded h-12" />
                       </div>
                     </div>
                   ); }) }
