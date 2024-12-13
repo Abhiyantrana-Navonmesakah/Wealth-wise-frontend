@@ -22,6 +22,8 @@ import quantIcon from '../assets/quant.svg';
 import hsbcIcon from '../assets/hsbc.svg';
 import utiIcon from '../assets/uti.svg';
 import licIcon from '../assets/lic.svg';
+import bajajIcon from '../assets/bajaj.png';
+import sbiIcon from '../assets/sbi.jpg'
 
 
 
@@ -102,7 +104,9 @@ const Home = ({ mail }) => {
    const [videoDetails, setVideoDetails] = useState([]);
 
   const videoLinks = [
+    'https://www.youtube.com/watch?v=lqk2LppTl84&t=228s',
     'https://youtu.be/fiLVHI8CUZE?si=5fsPZh713j1OsKhP',
+    'https://youtu.be/Q0uXGQu55GM?si=B15Ob4M-WdtP0Sag',
     'https://youtu.be/7c4ZJ-ljRMw?si=RfoeTdPrI1xqrSTA',
     'https://youtu.be/-FP7IVNN4bI?si=tF6yy1r7ZsyAxd5b',
     'https://youtu.be/7jvTrxh0kGc?si=xOKMXSjHdb-oaw-X',
@@ -226,7 +230,9 @@ const Home = ({ mail }) => {
               { name: 'ICICI Bank', code: 'ICICI FD', return: 7.5, icon: '₹', link : 'https://www.etmoney.com/fixed-deposit/icici-bank-fd-rates/5', image: iciciIcon },
               { name: 'HDFC Bank', code: 'HDFC FD', return: 7.2, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/hdfc-bank-fd-rates/4', image: hdfcIcon },
               { name: 'RBL Bank', code: 'RBL FD', return: 7.8, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/rbl-bank-fd-rates/16', image: rblIcon },
-              { name: 'Bank of Baroda', code: 'BOB FD', return: 7.9, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bank-of-baroda-fd-rates/6', image: bobIcon }
+              { name: 'Bank of Baroda', code: 'BOB FD', return: 7.9, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bank-of-baroda-fd-rates/6', image: bobIcon },
+              { name: 'Bajaj Finance Ltd.', code: 'Bajaj FD', return: 7.8, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bajaj-finance-ltd-fd-rates/1', image: bajajIcon },
+              { name: 'State Bank of India', code: 'SBI FD', return: 5.6, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/sbi-bank-fd-rates/2', image: sbiIcon }
             ]
           },
           {
@@ -248,22 +254,24 @@ const Home = ({ mail }) => {
               { 
                 id : 0,
                 details : ('https://youtu.be/fiLVHI8CUZE?si=5fsPZh713j1OsKhP')
-              },
-              { 
+              },{ 
                 id : 1,
                 details : ('https://youtu.be/7c4ZJ-ljRMw?si=RfoeTdPrI1xqrSTA')
-              },
-              {
+              },{
                 id : 2,
                 details : ('https://youtu.be/-FP7IVNN4bI?si=tF6yy1r7ZsyAxd5b')
-              },
-              { 
+              },{ 
                 id : 3,
                 details : ('https://youtu.be/7jvTrxh0kGc?si=xOKMXSjHdb-oaw-X')
-              },
-              {
+              },{
                 id : 4,
                 details : ('https://youtu.be/raW2FIPnqIc?si=yGUBkLsnZgYuByhu')
+              },{
+                id : 5,
+                details: ('https://www.youtube.com/watch?v=lqk2LppTl84&t=228s')
+              },{
+                id : 6,
+                details: ('https://youtu.be/Q0uXGQu55GM?si=B15Ob4M-WdtP0Sag')
               }
             ]
           }
