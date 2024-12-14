@@ -4,26 +4,10 @@ import { Send } from 'lucide-react';
 import 'font-awesome/css/font-awesome.min.css';
 import Navbar from './navbar.js'
 import { useNavigate } from 'react-router-dom';
-import iciciIcon from '../assets/icici.jpg';
-import hdfcIcon from '../assets/hdfc.jpg';
-import rblIcon from '../assets/rbl.jpg';
-import bobIcon from '../assets/bob.jpg';
-import itcIcon from '../assets/itc.webp';
-import ramcoIcon from '../assets/ramco.webp';
-import darshanIcon from '../assets/darshan.webp';
-import lorenziniIcon from '../assets/Lorenzini.webp';
-import tataIcon from '../assets/tata.webp'
-import titanIcon from '../assets/titan.webp';
-import trenIcon from '../assets/trent.webp';
-import boschIcon from '../assets/bosch.webp';
-import hdfcmfIcon from '../assets/hdfc mf.svg';
-import adityaIcon from '../assets/aditya birla.svg';
-import quantIcon from '../assets/quant.svg';
-import hsbcIcon from '../assets/hsbc.svg';
-import utiIcon from '../assets/uti.svg';
-import licIcon from '../assets/lic.svg';
-import bajajIcon from '../assets/bajaj.png';
-import sbiIcon from '../assets/sbi.jpg'
+import { Cloudinary } from '@cloudinary/url-gen';
+import { auto } from '@cloudinary/url-gen/actions/resize';
+import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
+import { AdvancedImage } from '@cloudinary/react'
 
 
 
@@ -99,9 +83,9 @@ async function fetchYouTubeVideoDetails(link) {
 
 
 const Home = ({ mail }) => {
+  const cld = new Cloudinary({ cloud: { cloudName: 'djlgmbop9' } });
 
-
-   const [videoDetails, setVideoDetails] = useState([]);
+  const [videoDetails, setVideoDetails] = useState([]);
 
   const videoLinks = [
     'https://www.youtube.com/watch?v=lqk2LppTl84&t=228s',
@@ -213,38 +197,38 @@ const Home = ({ mail }) => {
         {
             type: 'Stocks',
             items: [
-              { name: 'ITC Ltd.', code: 'ITC', price: 470, icon: '₹', link: 'https://www.etmoney.com/stocks/itc-ltd/1353', image: itcIcon },
-              { name: 'Ramco Cements Ltd', code: 'RAMCOCEM', price: 1040.70, icon: '₹', link: 'https://www.etmoney.com/stocks/the-ramco-cements-ltd/2753', image: ramcoIcon },
-              { name: 'Lorenzini Apparels Ltd', code: 'LAL', price: 24.21, icon: '₹', link: 'https://www.etmoney.com/stocks/lorenzini-apparels-ltd/4352', image: lorenziniIcon },
-              { name: 'Tata Power Company', code: 'TATAPOWER', price: 428.45, icon: '₹', link: 'https://www.etmoney.com/stocks/tata-power-company-ltd/2418', image: tataIcon },
-              { name: 'Darshan Orna Ltd', code: 'DARSHANORNA', price: 6.05, icon: '₹', link: 'https://www.moneycontrol.com/india/stockpricequote/diamond-cuttingjewelleryprecious-metals/darshanorna/DO04', image: darshanIcon },
-              { name: 'Titan Company Ltd', code: 'TITAN', price: 3508.85, icon: '₹', link: 'https://www.etmoney.com/stocks/titan-company-ltd/55', image: titanIcon },
-              { name: 'Trent Ltd', code: 'TRENT', price: 7000.25, icon: '₹', link: 'https://www.etmoney.com/stocks/trent-ltd/844', image:trenIcon },
-              { name: 'Bosch Ltd', code: 'BOSCHLTD', price: 36469.60, icon: '₹', link: 'https://www.etmoney.com/stocks/bosch-ltd/1150', image:boschIcon }
+              { name: 'ITC Ltd.', code: 'ITC', price: 470, icon: '₹', link: 'https://www.etmoney.com/stocks/itc-ltd/1353', image: 'itc_ktdtqa' },
+              { name: 'Ramco Cements Ltd', code: 'RAMCOCEM', price: 1040.70, icon: '₹', link: 'https://www.etmoney.com/stocks/the-ramco-cements-ltd/2753', image: 'ramco_tcob7p' },
+              { name: 'Lorenzini Apparels Ltd', code: 'LAL', price: 24.21, icon: '₹', link: 'https://www.etmoney.com/stocks/lorenzini-apparels-ltd/4352', image: 'Lorenzini_d2xax6' },
+              { name: 'Tata Power Company', code: 'TATAPOWER', price: 428.45, icon: '₹', link: 'https://www.etmoney.com/stocks/tata-power-company-ltd/2418', image: 'tata_bdich9' },
+              { name: 'Darshan Orna Ltd', code: 'DARSHANORNA', price: 6.05, icon: '₹', link: 'https://www.moneycontrol.com/india/stockpricequote/diamond-cuttingjewelleryprecious-metals/darshanorna/DO04', image: 'darshan_nhfscr' },
+              { name: 'Titan Company Ltd', code: 'TITAN', price: 3508.85, icon: '₹', link: 'https://www.etmoney.com/stocks/titan-company-ltd/55', image: 'titan_arreis' },
+              { name: 'Trent Ltd', code: 'TRENT', price: 7000.25, icon: '₹', link: 'https://www.etmoney.com/stocks/trent-ltd/844', image: 'trent_djzlq8' },
+              { name: 'Bosch Ltd', code: 'BOSCHLTD', price: 36469.60, icon: '₹', link: 'https://www.etmoney.com/stocks/bosch-ltd/1150', image: 'bosch_ilhkn0' }
               
             ]
           },
           {
             type: 'Fixed Deposits',
             items: [
-              { name: 'ICICI Bank', code: 'ICICI FD', return: 7.5, icon: '₹', link : 'https://www.etmoney.com/fixed-deposit/icici-bank-fd-rates/5', image: iciciIcon },
-              { name: 'HDFC Bank', code: 'HDFC FD', return: 7.2, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/hdfc-bank-fd-rates/4', image: hdfcIcon },
-              { name: 'RBL Bank', code: 'RBL FD', return: 7.8, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/rbl-bank-fd-rates/16', image: rblIcon },
-              { name: 'Bank of Baroda', code: 'BOB FD', return: 7.9, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bank-of-baroda-fd-rates/6', image: bobIcon },
-              { name: 'Bajaj Finance Ltd.', code: 'Bajaj FD', return: 7.8, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bajaj-finance-ltd-fd-rates/1', image: bajajIcon },
-              { name: 'State Bank of India', code: 'SBI FD', return: 5.6, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/sbi-bank-fd-rates/2', image: sbiIcon }
+              { name: 'ICICI Bank', code: 'ICICI FD', return: 7.5, icon: '₹', link : 'https://www.etmoney.com/fixed-deposit/icici-bank-fd-rates/5', image: 'icici_gg55gq' },
+              { name: 'HDFC Bank', code: 'HDFC FD', return: 7.2, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/hdfc-bank-fd-rates/4', image: 'hdfc_jwnres' },
+              { name: 'RBL Bank', code: 'RBL FD', return: 7.8, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/rbl-bank-fd-rates/16', image: 'rbl_bi4ksw' },
+              { name: 'Bank of Baroda', code: 'BOB FD', return: 7.9, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bank-of-baroda-fd-rates/6', image: 'bob_dkr6sm' },
+              { name: 'Bajaj Finance Ltd.', code: 'Bajaj FD', return: 7.8, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/bajaj-finance-ltd-fd-rates/1', image: 'bajaj_lb6zg6' },
+              { name: 'State Bank of India', code: 'SBI FD', return: 5.6, icon: '₹', link: 'https://www.etmoney.com/fixed-deposit/sbi-bank-fd-rates/2', image: 'sbi_wugpsu' }
             ]
           },
           {
             type: 'Mutual Funds',
             items: [
-              { name: 'HDFC Bluechip', code: 'Direct-Growth', return: 15.82, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/hdfc-balanced-advantage-fund-direct-plan-growth/15622', image: hdfcmfIcon },
-              { name: 'Aditya Birla Sun Life', code: 'Direct-Growth', return: 9.58, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/aditya-birla-sun-life-medium-term-plan-direct-growth/15477', image: adityaIcon },
-              { name: 'Quant Multi Asset', code: 'Direct-Growth', return: 16.25, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/quant-multi-asset-fund-direct-growth/16918', image: quantIcon },
-              { name: 'ICICI Prudential', code: 'Direct-Growth', return: 18.3, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/icici-prudential-infrastructure-direct-growth/15416', image: iciciIcon },
-              { name: 'HSBC Value Fund', code: 'Direct-Growth', return: 21.28, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/hsbc-value-fund-direct-growth/15836', image: hsbcIcon },
-              { name: 'UTI Short Duration', code: 'Direct-Growth', return: 7.42, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/uti-short-duration-direct-growth/16611', image: utiIcon },
-              { name: 'LIC MF Arbitrage Fund', code: 'Direct-Growth', return: 5.71, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/lic-mf-arbitrage-fund-direct-growth/39181', image: licIcon },
+              { name: 'HDFC Bluechip', code: 'Direct-Growth', return: 15.82, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/hdfc-balanced-advantage-fund-direct-plan-growth/15622', image: 'hdfc_mf_ixtwmi' },
+              { name: 'Aditya Birla Sun Life', code: 'Direct-Growth', return: 9.58, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/aditya-birla-sun-life-medium-term-plan-direct-growth/15477', image: 'aditya_birla_arlswk' },
+              { name: 'Quant Multi Asset', code: 'Direct-Growth', return: 16.25, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/quant-multi-asset-fund-direct-growth/16918', image: 'quant_hcnfdx' },
+              { name: 'ICICI Prudential', code: 'Direct-Growth', return: 18.3, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/icici-prudential-infrastructure-direct-growth/15416', image: 'icici_gg55gq' },
+              { name: 'HSBC Value Fund', code: 'Direct-Growth', return: 21.28, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/hsbc-value-fund-direct-growth/15836', image: 'hsbc_ffoui0' },
+              { name: 'UTI Short Duration', code: 'Direct-Growth', return: 7.42, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/uti-short-duration-direct-growth/16611', image: 'uti_n4psc1' },
+              { name: 'LIC Arbitrage Fund', code: 'Direct-Growth', return: 5.71, icon: '₹',link : 'https://www.etmoney.com/mutual-funds/lic-mf-arbitrage-fund-direct-growth/39181', image: 'lic_rp71bg' },
             ]
           },
           {
@@ -358,6 +342,11 @@ const Home = ({ mail }) => {
                 {category.items.map((investment, index) => {
 
                   const bgIntensity = Math.max(700 - (index * 50), 800);
+
+                  const img = cld.image(investment.image)
+                    .format('auto')
+                    .quality('auto')
+                    .resize(auto().gravity(autoGravity()).width(500).height(500));
                   
                   return category.type === 'Investment Videos' && videoDetails && videoDetails[investment.id] ? (
                       <div
@@ -400,7 +389,8 @@ const Home = ({ mail }) => {
                               <p className="text-sm text-gray-400">( {investment.return}% )</p>
                             </div>
                         </div>
-                        <img src={investment.image} alt="Investment Icon" className="w-12 rounded h-12" />
+                        <AdvancedImage className='w-12 h-12 rounded' cldImg={img} />
+                        
                       </div>
                     </div>
                   )
@@ -421,7 +411,7 @@ const Home = ({ mail }) => {
                               <p className="text-sm text-gray-400">( {investment.return}% )</p>
                             </div>
                         </div>
-                        <img src={investment.image} alt="Investment Icon" className="w-12 rounded h-12" />
+                        <AdvancedImage className='w-12 h-12 rounded' cldImg={img} />
                       </div>
                     </div>
                   ) : <div 
@@ -440,7 +430,7 @@ const Home = ({ mail }) => {
                               <p className="text-sm text-gray-400">( {investment.icon}{investment.price} )</p>
                           </div>
                       </div>
-                      <img src={investment.image} alt="Investment Icon" className="w-12 h-12 rounded" />
+                      <AdvancedImage className='w-12 h-12 rounded' cldImg={img} />
                   </div>
               </div>; }) }
               </div>
