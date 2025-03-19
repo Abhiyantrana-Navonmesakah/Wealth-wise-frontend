@@ -1,12 +1,11 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="center" width="30%">
+    <img src="https://github.com/user-attachments/assets/936e0ad8-e308-4f0e-ae6d-5ac23a321e9f" align="center" width="30%">
 </p>
 <p align="center"><h1 align="center">WEALTH-WISE-FRONTEND</h1></p>
 <p align="center">
     <em><a href="https://wealthwisee.vercel.app/">wealthwisee.vercel.app</a></em>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/github/license/Abhiyantrana-Navonmesakah/Wealth-wise-frontend?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
     <img src="https://img.shields.io/github/last-commit/Abhiyantrana-Navonmesakah/Wealth-wise-frontend?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
     <img src="https://img.shields.io/github/languages/top/Abhiyantrana-Navonmesakah/Wealth-wise-frontend?style=default&color=0080ff" alt="repo-top-language">
     <img src="https://img.shields.io/github/languages/count/Abhiyantrana-Navonmesakah/Wealth-wise-frontend?style=default&color=0080ff" alt="repo-language-count">
