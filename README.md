@@ -298,10 +298,8 @@ Nagasai [@NagasaiPraneeth](https://github.com/NagasaiPraneeth)
 
 Aashish [@Aashish17405](https://github.com/Aashish17405)
 
-Anjali [@anjalikavade](https://github.com/anjalikavade)
 
 Abhilash [@AbhiGX](https://github.com/Abhi-GX)
 
-Nithin [@Nithin2023](https://github.com/Nithin2023-creator)
 
 ---
