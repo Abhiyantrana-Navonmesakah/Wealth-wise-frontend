@@ -1,305 +1,173 @@
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/936e0ad8-e308-4f0e-ae6d-5ac23a321e9f" align="center" width="30%">
-</p>
-<p align="center"><h1 align="center">WEALTH-WISE-FRONTEND</h1></p>
-<p align="center">
-    <em><a href="https://wealthwisee.vercel.app/">wealthwisee.vercel.app</a></em>
-</p>
-<p align="center">
-    <img src="https://img.shields.io/github/last-commit/Abhiyantrana-Navonmesakah/Wealth-wise-frontend?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-    <img src="https://img.shields.io/github/languages/top/Abhiyantrana-Navonmesakah/Wealth-wise-frontend?style=default&color=0080ff" alt="repo-top-language">
-    <img src="https://img.shields.io/github/languages/count/Abhiyantrana-Navonmesakah/Wealth-wise-frontend?style=default&color=0080ff" alt="repo-language-count">
-</p>
-<p align="center"><!-- default option, no dependency badges. -->
-</p>
-<p align="center">
-    <!-- default option, no dependency badges. -->
-</p>
-<br>
+![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-## 🔗 Table of Contents
+# 🚀 WEALTH-WISE
 
-- [📍 Overview](#-overview)
-- [👾 Features](#-features)
-- [📁 Project Structure](#-project-structure)
-  - [📂 Project Index](#-project-index)
-- [🚀 Getting Started](#-getting-started)
-  - [☑️ Prerequisites](#-prerequisites)
-  - [⚙️ Installation](#-installation)
-  - [🤖 Usage](#🤖-usage)
-- [🙌 Contributors](#-contributors)
+> Your intelligent financial companion for smarter investing, budgeting, and financial education.
 
 ---
 
-## 📍 Overview
+## �� Problem Statement
 
-The WealthWise Frontend is a React.js-powered financial advisory platform that provides an intuitive, user-friendly interface for investment planning and financial analysis. It offers an interactive AI chatbot, a real-time market simulation, and personalized insights, making financial literacy accessible to users of all levels.
+In today's fast-paced financial world, individuals struggle with complex financial planning and investment decisions. Traditional finance apps offer either basic rule-based insights or rely on slow GPU-based AI models, resulting in delayed advice and missed opportunities. Users need real-time, personalized financial guidance that adapts to their unique goals and risk profiles.
+
+Wealth Wise addresses this by leveraging Groq's LPU technology to deliver instant, intelligent financial advisory. With blazing-fast inference speeds (300+ tokens/second) and integrated mathematical analysis, we provide real-time, data-backed financial recommendations that transform how users manage their wealth.
 
 ---
 
-## 👾 Features
+## 🎯 Objective
 
-### 📊 User Dashboard & Expense Tracker
+WealthWise is a AI-powered financial advisory and education platform that provides an intuitive, user-friendly interface for investment planning and financial analysis. It offers an interactive AI chatbot, real-time market simulation, personalized insights, and comprehensive financial education resources, making financial literacy accessible to users of all levels.
 
-- **Personalized Financial Dashboard**
+---
+
+## 🧠 Team & Approach
+
+### Team Name:
+
+`Abhiyantrana-Navonmesakah`
+
+### Team Members:
+
+- Anurag [@AnuragNarsingoju](https://github.com/AnuragNarsingoju)
+- Nagasai [@NagasaiPraneeth](https://github.com/NagasaiPraneeth)
+- Aashish [@Aashish17405](https://github.com/Aashish17405)
+- Abhilash [@AbhiGX](https://github.com/Abhi-GX)
+
+### Your Approach:
+
+- Focused on making financial literacy accessible to users of all backgrounds
+- Addressed key challenges in financial education through AI-powered assistance
+- Developed an interactive simulation for risk-free market learning
+- Created a learning-by-doing framework for financial concepts
+
+---
+
+## 🛠️ Tech Stack
+
+### Core Technologies Used:
+
+- Frontend: React.js, Tailwind CSS
+- Backend: Express.js, Firebase
+- Database: MongoDB, Firebase Firestore
+- Hosting: Vercel (https://wealthwisee.vercel.app/)
+
+### Sponsor Technologies Used (if any):
+
+- [✅] **Groq:** Leveraged Groq's LPU™ Inference Engine for enhanced AI capabilities:
+  - Implemented ultra-fast AI inference for real-time financial advice
+  - Utilized RAG (Retrieval-Augmented Generation) for accurate market insights
+  - Achieved low-latency responses for interactive chatbot functionality
+  - Optimized cost-efficiency through better performance per watt
+  - Enabled scalable AI processing for enterprise-level financial analysis
+
+---
+
+## ✨ Key Features
+
+- ✅ **Personalized Financial Dashboard**
+
   - Real-time display of income and expenses
   - Smart investment recommendations
   - Intelligent budget planner with spending insights
+  - Visual learning tools for financial progress tracking
 
-### 🤖 AI-Powered Investment Assistant
+- ✅ **AI-Powered Investment Assistant**
 
-- **Smart Investment Guidance**
   - AI-driven stock & mutual fund suggestions
   - Personalized recommendations based on risk profile
   - Goal-based investment planning
-- **Interactive Chatbot**
-  - Financial education resources
-  - Real-time market insights
-  - Investment strategy guidance
+  - Interactive financial education chatbot with jargon-free explanations
 
-### 📈 Virtual Stock Market Simulator
+- ✅ **Financial Education Center**
 
-- **Real-Time Trading Experience**
+  - Bite-sized financial literacy modules
+  - Interactive quizzes and learning assessments
+  - Personalized learning paths based on financial goals
+  - Real-world case studies and examples
+
+- ✅ **Virtual Stock Market Simulator**
+
   - Practice trading with virtual currency
   - Interactive portfolio management
-  - Live market simulation
-- **Market Analysis Tools**
-  - Historical data visualization
-  - Trend analysis
-  - Performance tracking
+  - Live market simulation with educational tooltips
+  - Historical data visualization with learning annotations
 
-### 🔒 Security & User Experience
-
-- **Secure Authentication**
+- ✅ **Secure Authentication & Modern UX**
   - Google OAuth integration
-  - Protected user data
-- **Modern Design**
   - Clean, responsive UI with Tailwind CSS
   - Mobile-first approach
   - Cross-device compatibility
 
 ---
 
-## 📁 Project Structure
+## 📽️ Demo & Deliverables
 
-```sh
-└── Wealth-wise-frontend/
-    ├── README.md
-    ├── package-lock.json
-    ├── package.json
-    ├── public
-    │   ├── favicon.ico
-    │   ├── index.html
-    │   ├── logo192.png
-    │   ├── logo512.png
-    │   ├── manifest.json
-    │   ├── navlogo1.png
-    │   ├── robots.txt
-    │   └── stockvideo.mp4
-    ├── src
-    │   ├── App.css
-    │   ├── App.js
-    │   ├── components
-    │   │   ├── ChatBot.js
-    │   │   ├── ExpenseDate.js
-    │   │   ├── FileUpload.js
-    │   │   ├── Home.js
-    │   │   ├── PageNotFound.js
-    │   │   ├── Psinfo.js
-    │   │   ├── login.js
-    │   │   ├── navbar.js
-    │   │   ├── personalFD.js
-    │   │   └── personalMF.js
-    │   ├── firebase.js
-    │   ├── index.css
-    │   ├── index.js
-    │   ├── reportWebVitals.js
-    │   └── setupTests.js
-    └── tailwind.config.js
-```
-
-### 📂 Project Index
-
-<details open>
-    <summary><b><code>WEALTH-WISE-FRONTEND/</code></b></summary>
-    <details>
-        <summary><b>__root__</b></summary>
-        <blockquote>
-            <table>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/package-lock.json'>package-lock.json</a></b></td>
-                <td><code>Automatically generated file for package dependencies</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/tailwind.config.js'>tailwind.config.js</a></b></td>
-                <td><code>Tailwind CSS configuration file</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/package.json'>package.json</a></b></td>
-                <td><code>Project metadata and dependencies</code></td>
-            </tr>
-            </table>
-        </blockquote>
-    </details>
-    <details>
-        <summary><b>src</b></summary>
-        <blockquote>
-            <table>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/firebase.js'>firebase.js</a></b></td>
-                <td><code>Firebase configuration and initialization</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/index.css'>index.css</a></b></td>
-                <td><code>Global CSS styles and Tailwind imports</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/App.css'>App.css</a></b></td>
-                <td><code>App-specific CSS styles</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/setupTests.js'>setupTests.js</a></b></td>
-                <td><code>Test environment configuration</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/App.js'>App.js</a></b></td>
-                <td><code>Main application component and routing</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/reportWebVitals.js'>reportWebVitals.js</a></b></td>
-                <td><code>Performance measurement utilities</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/index.js'>index.js</a></b></td>
-                <td><code>Application entry point</code></td>
-            </tr>
-            </table>
-            <details>
-                <summary><b>components</b></summary>
-                <blockquote>
-                    <table>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/personalMF.js'>personalMF.js</a></b></td>
-                        <td><code>Personal mutual funds management component</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/Home.js'>Home.js</a></b></td>
-                        <td><code>Homepage and dashboard component</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/login.js'>login.js</a></b></td>
-                        <td><code>User authentication and login interface</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/ExpenseDate.js'>ExpenseDate.js</a></b></td>
-                        <td><code>Expense date tracking component</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/Psinfo.js'>Psinfo.js</a></b></td>
-                        <td><code>Personal stock information display</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/PageNotFound.js'>PageNotFound.js</a></b></td>
-                        <td><code>404 error page component</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/ChatBot.js'>ChatBot.js</a></b></td>
-                        <td><code>AI-powered financial assistant chatbot</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/FileUpload.js'>FileUpload.js</a></b></td>
-                        <td><code>Document upload handling component</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/personalFD.js'>personalFD.js</a></b></td>
-                        <td><code>Personal fixed deposits management component</code></td>
-                    </tr>
-                    <tr>
-                        <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/src/components/navbar.js'>navbar.js</a></b></td>
-                        <td><code>Navigation bar component</code></td>
-                    </tr>
-                    </table>
-                </blockquote>
-            </details>
-        </blockquote>
-    </details>
-    <details>
-        <summary><b>public</b></summary>
-        <blockquote>
-            <table>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/public/index.html'>index.html</a></b></td>
-                <td><code>Main HTML template file</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/public/manifest.json'>manifest.json</a></b></td>
-                <td><code>Progressive Web App manifest</code></td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend/blob/master/public/robots.txt'>robots.txt</a></b></td>
-                <td><code>Search engine crawling instructions</code></td>
-            </tr>
-            </table>
-        </blockquote>
-    </details>
-</details>
+- **Demo Video Link:** [Paste YouTube or Loom link here]
+- **Pitch Deck / PPT Link:** [Paste Google Slides / PDF link here]
 
 ---
 
-## 🚀 Getting Started
+## ✅ Tasks & Bonus Checklist
 
-### ☑️ Prerequisites
+- [✅] **All members of the team completed the mandatory task - Followed at least 2 of our social channels and filled the form** (Details in Participant Manual)
+- [✅] **All members of the team completed Bonus Task 1 - Sharing of Badges and filled the form (2 points)** (Details in Participant Manual)
+- [✅] **All members of the team completed Bonus Task 2 - Signing up for Sprint.dev and filled the form (3 points)** (Details in Participant Manual)
 
-Before getting started with Wealth-wise-frontend, ensure your runtime environment meets the following requirements:
+---
 
-- **Programming Language:** JavaScript
-- **Package Manager:** Npm
+## 🧪 How to Run the Project
 
-### ⚙️ Installation
+### Requirements:
 
-Install Wealth-wise-frontend using one of the following methods:
+- Node.js
+- npm package manager
+- A web browser
 
-**Build from source:**
+### Local Setup:
 
-1. Clone the Wealth-wise-frontend repository:
+```bash
+# Clone the repo
+git clone https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend
 
-```sh
-❯ git clone https://github.com/Abhiyantrana-Navonmesakah/Wealth-wise-frontend
+# Navigate to the project directory
+cd Wealth-wise-frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
 ```
 
-2. Navigate to the project directory:
+The application will launch at http://localhost:3000 in your default browser.
 
-```sh
-❯ cd Wealth-wise-frontend
-```
+---
 
-3. Install the project dependencies:
+## 🧬 Future Scope
 
-**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+- 📈 Integration with more financial APIs for broader market data
+- 🛡️ Advanced security features for financial transactions
+- 🌐 Multi-language support for global accessibility
+- 📱 Native mobile application development
+- 🤖 Enhanced AI capabilities for more precise financial advice
+- 🎓 Certification programs for completed financial education modules
+- 🔄 Gamification elements to increase engagement with financial learning
 
-```sh
-❯ npm install
-```
+---
 
-### 🤖 Usage
+## 📎 Resources / Credits
 
-Run Wealth-wise-frontend using the following command:
-**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
+- Firebase for authentication and database services
+- React.js for frontend development
+- Tailwind CSS for UI/UX design
+- Financial APIs for market data
+- Open-source libraries for data visualization
+- Educational content from financial literacy experts
 
-```sh
-❯ npm start
-```
+---
 
-## 🙌 Contributors
+## 🏁 Final Words
 
-Anurag [@AnuragNarsingoju](https://github.com/AnuragNarsingoju)
-
-Nagasai [@NagasaiPraneeth](https://github.com/NagasaiPraneeth)
-
-Aashish [@Aashish17405](https://github.com/Aashish17405)
-
-
-Abhilash [@AbhiGX](https://github.com/Abhi-GX)
-
+The WealthWise project aims to democratize financial literacy and empower users to make informed investment decisions. Our team has created an accessible platform that combines cutting-edge technology with user-friendly design to transform how millennials approach personal finance. By integrating education throughout the user experience, we're not just helping users manage money, but teaching them the skills they need for lifelong financial success.
 
 ---
