@@ -6,7 +6,7 @@
 
 ---
 
-## �� Problem Statement
+## Problem Statement
 
 In today's fast-paced financial world, individuals struggle with complex financial planning and investment decisions. Traditional finance apps offer either basic rule-based insights or rely on slow GPU-based AI models, resulting in delayed advice and missed opportunities. Users need real-time, personalized financial guidance that adapts to their unique goals and risk profiles.
 
@@ -51,15 +51,6 @@ WealthWise is a AI-powered financial advisory and education platform that provid
 - Database: MongoDB, Firebase Firestore
 - Hosting: Vercel (https://wealthwisee.vercel.app/)
 
-### Sponsor Technologies Used (if any):
-
-- [✅] **Groq:** Leveraged Groq's LPU™ Inference Engine for enhanced AI capabilities:
-  - Implemented ultra-fast AI inference for real-time financial advice
-  - Utilized RAG (Retrieval-Augmented Generation) for accurate market insights
-  - Achieved low-latency responses for interactive chatbot functionality
-  - Optimized cost-efficiency through better performance per watt
-  - Enabled scalable AI processing for enterprise-level financial analysis
-
 ---
 
 ## ✨ Key Features
@@ -102,17 +93,7 @@ WealthWise is a AI-powered financial advisory and education platform that provid
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** [Paste YouTube or Loom link here]
-- **Pitch Deck / PPT Link:** [Paste Google Slides / PDF link here]
-
----
-
-## ✅ Tasks & Bonus Checklist
-
-- [✅] **All members of the team completed the mandatory task - Followed at least 2 of our social channels and filled the form** (Details in Participant Manual)
-- [✅] **All members of the team completed Bonus Task 1 - Sharing of Badges and filled the form (2 points)** (Details in Participant Manual)
-- [✅] **All members of the team completed Bonus Task 2 - Signing up for Sprint.dev and filled the form (3 points)** (Details in Participant Manual)
-
+- **Demo Video Link:** [[Live Demo](https://www.youtube.com/watch?v=yNrLCCiV_XQ)]
 ---
 
 ## 🧪 How to Run the Project
@@ -165,8 +146,6 @@ The application will launch at http://localhost:3000 in your default browser.
 - Educational content from financial literacy experts
 
 ---
-
-## 🏁 Final Words
 
 The WealthWise project aims to democratize financial literacy and empower users to make informed investment decisions. Our team has created an accessible platform that combines cutting-edge technology with user-friendly design to transform how millennials approach personal finance. By integrating education throughout the user experience, we're not just helping users manage money, but teaching them the skills they need for lifelong financial success.
 
